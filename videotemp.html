@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Studio — 3D Product Animation Videos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+          },
+          colors: {
+            charcoal: '#111827',
+            gold: '#C68B2C',
+            golddark: '#A66F1A',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      background-color: #FFFFFF;
+      color: #111827;
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .video-box {
+      background-color: #FFFFFF;
+      border: 1px solid #E5E7EB;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .video-box:hover {
+      border-color: #C68B2C;
+      box-shadow: 0 18px 36px -14px rgba(17, 24, 39, 0.14);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body class="bg-white text-charcoal antialiased selection:bg-amber-100 selection:text-charcoal">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="font-serif text-xl sm:text-2xl font-semibold tracking-wider text-charcoal">
+        AURA STUDIO
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-xs font-medium uppercase tracking-widest text-gray-600">
+        <a href="#landscape-videos" class="hover:text-gold transition-colors">16:9 Commercials</a>
+        <a href="#vertical-videos" class="hover:text-gold transition-colors">9:16 Reels</a>
+        <a href="#footer" class="hover:text-gold transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="headerWhatsappBtn" type="button" class="inline-flex items-center justify-center px-4 sm:px-5 py-2 text-[11px] sm:text-xs font-semibold tracking-wide bg-charcoal text-white hover:bg-gold transition-colors">
+          Custom Video
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Title -->
+  <section id="top" class="pt-10 pb-8 sm:pt-14 sm:pb-12 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto text-center">
+      <span class="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold">3D Motion Showcase</span>
+      <h1 class="font-serif text-3xl sm:text-5xl font-semibold tracking-tight text-charcoal mt-1.5 uppercase">
+        Product Animation Videos
+      </h1>
+      <p class="mt-3 text-xs sm:text-sm text-gray-500 max-w-xl mx-auto leading-relaxed">
+        Auto-playing 3D product commercials in widescreen (16:9) and vertical reels (9:16) formats. Click Preview to watch or Buy Now on WhatsApp.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION 1: 4 Landscape 16:9 Videos -->
+  <section id="landscape-videos" class="py-10 sm:py-14 px-3 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-6 sm:mb-8 border-b border-gray-200 pb-4">
+        <div>
+          <span class="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold">Section 01 &bull; Widescreen</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-charcoal mt-0.5">16:9 Commercial Videos</h2>
+        </div>
+        <span class="text-xs font-medium text-gray-400">4 Videos</span>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+        <!-- 16:9 Video 1 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="16:9" data-name="Noir Oud 3D Ad" data-price="₹8,999" data-desc="16:9 widescreen 3D perfume commercial with golden rim lighting and 4K 60fps render.">
+          <div class="relative aspect-video bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="reel2.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2 left-2 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">16:9</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Noir Oud 3D Ad</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹8,999</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 16:9 Video 2 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="16:9" data-name="Crystal Serum Reveal" data-price="₹9,499" data-desc="Macro glass refraction 3D animation with floating droplets for skincare launches.">
+          <div class="relative aspect-video bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/ad-2.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2 left-2 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">16:9</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Crystal Serum Reveal</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹9,499</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 16:9 Video 3 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="16:9" data-name="Diamond Cut Motion" data-price="₹10,999" data-desc="High-contrast studio crystal bottle rotation with caustic light reflections for luxury campaigns.">
+          <div class="relative aspect-video bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/ad-3.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2 left-2 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">16:9</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Diamond Cut Motion</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹10,999</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 16:9 Video 4 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="16:9" data-name="Energy Can Splash 3D" data-price="₹7,999" data-desc="Dynamic liquid splash simulation with neon light trails for beverage commercials.">
+          <div class="relative aspect-video bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/ad-4.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2 left-2 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">16:9</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Energy Can Splash 3D</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹7,999</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: 4 Vertical 9:16 Videos -->
+  <section id="vertical-videos" class="py-10 sm:py-14 px-3 sm:px-6 lg:px-8 border-t border-gray-100 bg-gray-50/40">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-end justify-between mb-6 sm:mb-8 border-b border-gray-200 pb-4">
+        <div>
+          <span class="text-[10px] font-semibold uppercase tracking-[0.22em] text-gold">Section 02 &bull; Reels &amp; Shorts</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-charcoal mt-0.5">9:16 Vertical Videos</h2>
+        </div>
+        <span class="text-xs font-medium text-gray-400">4 Videos</span>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+        <!-- 9:16 Video 1 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="9:16" data-name="L'Or Noir Reel" data-price="₹5,999" data-desc="Vertical 9:16 Instagram &amp; YouTube Shorts product reel with golden silk lighting.">
+          <div class="relative aspect-[9/16] bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/reel-1.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2.5 left-2.5 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">9:16</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">L'Or Noir Reel</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹5,999</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9:16 Video 2 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="9:16" data-name="Amber Elixir Short" data-price="₹6,499" data-desc="9:16 vertical product rotation with warm amber glow particles for Reels ads.">
+          <div class="relative aspect-[9/16] bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/reel-2.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2.5 left-2.5 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">9:16</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Amber Elixir Short</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹6,499</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9:16 Video 3 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="9:16" data-name="Tech Suite Promo" data-price="₹6,999" data-desc="Sleek 9:16 vertical SaaS &amp; hardware launch video combining UI and 3D motion.">
+          <div class="relative aspect-[9/16] bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/reel-3.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2.5 left-2.5 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">9:16</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Tech Suite Promo</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹6,999</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9:16 Video 4 -->
+        <article class="video-box rounded-lg overflow-hidden flex flex-col justify-between" data-ratio="9:16" data-name="Neon Fizz Vertical" data-price="₹5,499" data-desc="Fast-paced 9:16 beverage commercial reel with splash particles and neon lighting.">
+          <div class="relative aspect-[9/16] bg-gradient-to-br from-[#1C160E] to-[#090A0D] overflow-hidden">
+            <video src="videos/reel-4.mp4" autoplay muted loop playsinline class="w-full h-full object-cover relative z-10"></video>
+            <span class="absolute top-2.5 left-2.5 z-20 px-2 py-0.5 rounded bg-black/70 text-[9px] font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/30">9:16</span>
+          </div>
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-base sm:text-lg font-semibold text-charcoal leading-snug">Neon Fizz Vertical</h3>
+              <p class="text-xs sm:text-sm font-bold text-gold mt-0.5">₹5,499</p>
+            </div>
+            <div class="grid grid-cols-2 gap-1.5 sm:gap-2">
+              <button type="button" class="preview-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold border border-charcoal text-charcoal hover:bg-charcoal hover:text-white rounded transition-colors">Preview</button>
+              <button type="button" class="buy-btn py-2 px-1.5 text-[10px] sm:text-xs font-semibold bg-gold hover:bg-golddark text-white rounded transition-colors">Buy Now</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimal Footer -->
+  <footer id="footer" class="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+      <span class="font-serif text-base font-semibold text-charcoal tracking-wider">AURA STUDIO</span>
+      <span>&copy; 2026 Aura Studio. 16:9 &amp; 9:16 3D Product Animations.</span>
+    </div>
+  </footer>
+
+  <!-- Video Preview Modal -->
+  <div id="videoModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-xs">
+    <div class="bg-white max-w-xl w-full rounded-xl overflow-hidden shadow-2xl border border-gray-200">
+      <div class="flex items-center justify-between px-4 py-2.5 bg-charcoal text-white text-xs">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span id="modalRatioBadge" class="font-semibold uppercase tracking-wider text-amber-300"></span>
+          <span class="text-gray-400">&bull; Video Preview</span>
+        </div>
+        <button id="closeModalBtn" type="button" aria-label="Close Video Modal" class="text-gray-300 hover:text-white text-lg leading-none">&times;</button>
+      </div>
+
+      <div class="bg-[#090A0D] flex items-center justify-center p-3 sm:p-4">
+        <div id="modalStage" class="relative overflow-hidden rounded-lg bg-black shadow-2xl w-full aspect-video max-h-[55vh]">
+          <video id="modalVideo" controls autoplay loop playsinline class="w-full h-full object-cover"></video>
+        </div>
+      </div>
+
+      <div class="p-5 sm:p-6 space-y-3">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <span class="text-[10px] font-semibold uppercase tracking-widest text-gold">3D Product Animation</span>
+            <h3 id="modalTitle" class="font-serif text-2xl font-semibold text-charcoal"></h3>
+          </div>
+          <span id="modalPrice" class="font-serif text-2xl font-semibold text-gold"></span>
+        </div>
+        <p id="modalDesc" class="text-xs sm:text-sm text-gray-600 leading-relaxed"></p>
+        <div class="pt-3 border-t border-gray-100 flex items-center justify-end gap-3">
+          <button id="modalCloseFooterBtn" type="button" class="px-4 py-2 text-xs font-semibold border border-gray-200 text-gray-600 rounded hover:bg-gray-50">Close</button>
+          <button id="modalBuyBtn" type="button" class="px-5 py-2 text-xs font-semibold uppercase tracking-wider bg-gold hover:bg-golddark text-white rounded transition-colors">
+            Buy Now on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Toast -->
+  <div id="toastBanner" class="fixed bottom-5 right-5 z-50 hidden max-w-xs px-4 py-3 rounded-lg bg-charcoal text-white text-xs shadow-xl border border-gold/40">
+    <p id="toastMsg" class="leading-relaxed"></p>
+  </div>
+
+  <script>
+    (function () {
+      const WHATSAPP_NUMBER = '919876543210';
+
+      const toastBanner = document.getElementById('toastBanner');
+      const toastMsg = document.getElementById('toastMsg');
+      let toastTimer = null;
+
+      function showToast(text) {
+        toastMsg.textContent = text;
+        toastBanner.classList.remove('hidden');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toastBanner.classList.add('hidden');
+        }, 4000);
+      }
+
+      function sendToWhatsApp(name, price, ratio) {
+        const message = 'Hello Aura Studio! I want to buy the 3D Animation Video: "' + name + '" (' + ratio + ', Price: ' + price + ').';
+        const wpUrl = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message);
+        window.open(wpUrl, '_blank', 'noopener,noreferrer');
+        showToast('Opening WhatsApp for "' + name + '" (' + ratio + ')...');
+      }
+
+      document.getElementById('headerWhatsappBtn').addEventListener('click', function () {
+        const message = 'Hello Aura Studio! I want to order a custom 3D Product Animation Video.';
+        window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+        showToast('Opening WhatsApp for custom 3D video...');
+      });
+
+      const videoModal = document.getElementById('videoModal');
+      const modalStage = document.getElementById('modalStage');
+      const modalVideo = document.getElementById('modalVideo');
+      const modalRatioBadge = document.getElementById('modalRatioBadge');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalPrice = document.getElementById('modalPrice');
+      const modalDesc = document.getElementById('modalDesc');
+
+      let currentName = '';
+      let currentPrice = '';
+      let currentRatio = '16:9';
+
+      function openVideoModal(box) {
+        currentName = box.getAttribute('data-name');
+        currentPrice = box.getAttribute('data-price');
+        currentRatio = box.getAttribute('data-ratio') || '16:9';
+
+        const cardVideo = box.querySelector('video');
+        modalVideo.src = cardVideo ? cardVideo.getAttribute('src') : '';
+        modalRatioBadge.textContent = currentRatio + ' Format';
+        modalTitle.textContent = currentName;
+        modalPrice.textContent = currentPrice;
+        modalDesc.textContent = box.getAttribute('data-desc') || '';
+
+        if (currentRatio === '9:16') {
+          modalStage.className = 'relative overflow-hidden rounded-lg bg-black shadow-2xl aspect-[9/16] h-[52vh] mx-auto';
+        } else {
+          modalStage.className = 'relative overflow-hidden rounded-lg bg-black shadow-2xl w-full aspect-video max-h-[55vh]';
+        }
+
+        videoModal.classList.remove('hidden');
+        videoModal.classList.add('flex');
+        modalVideo.play().catch(function () {});
+      }
+
+      function closeVideoModal() {
+        modalVideo.pause();
+        modalVideo.removeAttribute('src');
+        modalVideo.load();
+        videoModal.classList.add('hidden');
+        videoModal.classList.remove('flex');
+      }
+
+      document.querySelectorAll('.preview-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const box = btn.closest('.video-box');
+          if (box) openVideoModal(box);
+        });
+      });
+
+      document.querySelectorAll('.buy-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const box = btn.closest('.video-box');
+          if (box) {
+            sendToWhatsApp(box.getAttribute('data-name'), box.getAttribute('data-price'), box.getAttribute('data-ratio'));
+          }
+        });
+      });
+
+      document.getElementById('modalBuyBtn').addEventListener('click', function () {
+        sendToWhatsApp(currentName, currentPrice, currentRatio);
+      });
+
+      document.getElementById('closeModalBtn').addEventListener('click', closeVideoModal);
+      document.getElementById('modalCloseFooterBtn').addEventListener('click', closeVideoModal);
+      videoModal.addEventListener('click', function (e) {
+        if (e.target === videoModal) closeVideoModal();
+      });
+    })();
+  </script>
+</body>
+</html>
